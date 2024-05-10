@@ -1,0 +1,98 @@
+<!-- The first line informs the browser 
+    about the type of document our site is presenting and how to process it.
+In this case, it's HTML5. There are other HTML document types declaration based on 
+the version of the HTML  with a relatively different markup such as
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd"> for HTML version 4 -->
+<!DOCTYPE html>
+
+<!-- The line indicates the begining of our document and 
+     specifies the page language in an attribute called "lang" which is short for language.
+     The lang attribute helps browsers 
+    in other rejoin to idenfiy your page language 
+    and provide translations where possible. The attribute is not really compulsory but nice to have -->
+	<html lang="en">
+        <!-- Here, we open of our head tag. Everything inside the head tag 
+            is not shown to user but used to process our code. This is where we will reference 
+             our external CSS and Javascript file and links to other 
+             remote resources needed to complete our task at later stage-->
+	<head>
+
+        <!-- Defines the initial scaling (with and content magnification) based on the device screen -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- This the title of page. What you normally see on your browser tab.
+        Example, you will see Login on your tab when you open https://dlcportal.ui.edu.ng/login -->
+        <title>Responsive Sidebar Menu - CSC 293 Group project</title>
+	    <!-- Here we close our head tag. 
+            Nticed how the tag started with <> and ended with </>? 
+            This very important to understand as it forms the building block 
+            of our software developement generally. Syntax! -->
+	</head>
+    <!-- Now we start our body. The body tag informs the browser that everything here is for our users to see -->
+	<body>
+
+        <!-- First, we start with a division with a tag called div. 
+            To understand the concept of a division (div tag) on html, 
+        please draw a rectangle on a plain sheet using a pencil. then divide the rectangle into 3 vertically
+    now erase the first vertical divide to make the left side wider than the two part.
+     This is same thing as making a div on HTML as you can specify 
+     the size of your div and even display a table-like content with it.
+    
+    Notice the class attribute on our div tags? 
+    This attribute specifies the CSS class that contains the instruction on how to redender this div. 
+    We will look at this later in the CSS part of the project
+    -->
+	    <div class="main">
+	        <div class="side-navbar">
+                <!-- The ul tag starts an unordered list. A list that does not have have numbering or specific order -->
+	            <ul>
+                    <!-- The li tag indicates an item in the list. Look at it as a mango in a basket.  -->
+	                <li>
+                        <!-- This tag below is called an anchor link. It makes element on the page clickable. 
+                            Typically used to take you to another page or document when you click an element on the a page -->
+                        <a href="#">
+                        <!-- The span tag makes it possible for us to wrap some content into a specific CSS styling group without
+                             necessary putting them in a separate division or another section container such as paragraph -->
+	                    <span class="icon"><i class='bx bxs-dashboard'></i></span>
+	                    <span class="text">Welcome</span>
+	                </a></li>
+	                <li><a href="#">
+	                    <span class="icon"><i class='bx bxs-book-alt' ></i></span>
+	                    <span class="text">Courses</span>
+	                </a></li>
+	                <li><a href="#">
+	                    <span class="icon"><i class='bx bxs-message-square-detail' ></i></span>
+	                    <span class="text">Messages</span>
+	                </a></li>
+	                <li><a href="#">
+	                    <span class="icon"><i class='bx bxs-message-rounded-detail' ></i></span>
+	                    <span class="text">Discussion</span>
+	                </a></li>
+	                <li><a href="#">
+	                    <span class="icon"><i class='bx bxs-user' ></i></span>
+	                    <span class="text">Profile</span>
+	                </a></li>
+	                <li><a href="#">
+	                    <span class="icon"><i class='bx bxs-download' ></i></span>
+	                    <span class="text">Download</span>
+	                </a></li>
+	                <li><a href="#">
+	                    <span class="icon"><i class='bx bxs-cog' ></i></span>
+	                    <span class="text">Setting</span>
+	                </a></li>
+	                <li><a href="#">
+	                    <span class="icon"><i class='bx bxs-log-out' ></i></span>
+	                    <span class="text">Log-Out</span>
+	                </a></li>
+
+                    <!-- This line indicates that our list (basket) is full. So we close it -->
+	            </ul>
+	        </div>
+	    
+	    </div>
+	 
+	
+	 <!-- Here we close our body -->
+	</body>
+    <!-- Indicates the end of our HTML -->
+	</html>
